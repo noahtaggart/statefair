@@ -14,7 +14,7 @@ eventHub.addEventListener("click", (clickEvent) => {
         eventHub.dispatchEvent(foodEvent)
     }
     else if (clickEvent.target.id ==="gameTicket") {
-        const gameEvent = new CustomEvent("foodTicketPurchased")
+        const gameEvent = new CustomEvent("gameTicketPurchased")
         eventHub.dispatchEvent(gameEvent)
     }
 })
