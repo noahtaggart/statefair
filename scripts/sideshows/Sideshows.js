@@ -3,8 +3,7 @@ const eventHub = document.querySelector("#state-fair")
 
 export const SideshowTicketHolders = () => {
     eventHub.addEventListener("sideshowTicketPurchased", customEvent => {
-        let html = `<div class="person gawker">
-        </div>`
+        let html = `<div class="person gawker"></div>`
 
         contentTarget.innerHTML += html
     })
